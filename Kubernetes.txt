@@ -1,0 +1,101 @@
+
+-> Docker is a platform which provides Containerization
+
+-> What is Containerization?
+It is a process of creating Containers
+
+-> Why do we need DOCKER CONTAINERS:-
+TO run our applications -> Run/creating images, containers
+
+------------------------------ KUBERNETES PODS --------------------------------------------
+-> A POD contains one or more CONTAINERS
+
+What is KUBERNETES?
+It is a Container Orchestration platform that Automates deployment of Containers/PODS
+
+------------------------------ ADVANTAGES/REALTIME APPLICATIONS of KUBERNETES -------------------------------
+
+KUBERNETES ADMINISTRATOR/DEVELOPER
+
+GOOGLE Team is working on different solutions for managing the PRODUCTION level CONTAINERS/PODS/CLUSTERS
+
+KUBERNETES -> ORGANIZATION (PRODUCT)
+
+PROBLEMS which we may face using DOCKER CONTAINERS: -
+1. Auto Scaling -> Increasing or Decreasing number of CONTAINERS/PODS based on the DEMAND from the Customers
+2. Auto Healing -> If Container dies, it should revive Automatically, using REPLICA SETS
+3. LOAD BALANCER -> Equally distributing the Traffic across different Containers/PODS, NGNINX load balancer
+4. ENTERPRISE LEVEL Solution -> Docker do not provide ENTERPRISE level solutions
+-> KUBENERTES is Free 
+-> AZURE KUBERNETES Service (AKS)
+-> Elastic Kubernetes Service (EKS) available in AWS
+-> FIREWALLS, Security
+
+---------------------------------------------------------------------------------------------------------------
+
+How do we AUTO SCALE ?
+
+HORIZONTAL POD Auto scaling : -
+-> You increase/decrease the number of PODS 
+-> Minimum number of REPLICAS/PODS and Maximum number of REPLICAS/PODS
+
+What is difference between POD and REPLICA Set ?
+-> POD is the actually a Container and REPLICA set is a copy of a POD
+
+Cluster level Auto scaling: -
+Based on number of worker nodes
+
+-> No of worker nodes
+-> Maximum capacity of your worker nodes (8GB RAM and 30 GB)
+-> Maximum capacity used by your worker node (6gb and 25GB) 70%
+-> Add more worker nodes
+-------------------------------------- KUBERNETES ARCHITECTURE  --------------------------------------
+
+Data Plane or Worker Nodes : -
+-> Kubelet : Responsible for creating and running the PODS and it informs Control plane if a POD is not available
+-> Kube-proxy : Responsible for assigning the IP address and it diverts the traffic through LOAD Balancers for PODS
+-> PODS : One or more COntainers make a POD
+
+
+Control Plane or Master Node
+-> API server: Decides on which Worker node the PODS should be created
+-> Scheduler : It will schedule the PODS creation
+-> ETCD : Entire cluster information is stored in Key-value pair format
+
+----------------------------------------------------------------------------------------------
+
+-> KUBECTL 
+-> KOPS
+-> MiniKube (Development)
+-> HELM Chart (Production grade )
+-> Load Balancers (NGINX)
+-> YAML file 
+--------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
